@@ -1,10 +1,11 @@
-import { Button } from "@chakra-ui/react"
+
+import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
     <>
-      <Button>Click here</Button>
+    <Navbar/>
     </>
   )
 }
