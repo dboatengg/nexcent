@@ -1,17 +1,21 @@
+import { Box } from "@chakra-ui/react";
+import AudienceSuitability from "./components/AudienceSuitability";
+// import Client from "./components/Client";
 
-import Client from "./components/Client"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 
 function App() {
-
   return (
     <>
-    <Navbar/>
-    {/* <Hero/> */}
-    <Client/>
+      <Navbar />
+      {/* <Hero /> */}
+      
+      <Box p="20px" maxWidth="1200px" mx="auto">
+        <AudienceSuitability />
+        {/* <Client /> */}
+      </Box>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
