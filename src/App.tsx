@@ -4,6 +4,7 @@ import Client from "./components/Client";
 
 import Navbar from "./components/Navbar";
 import Pixel from "./components/Pixel";
+import Stats from "./components/Stats";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Client />
         <AudienceSuitability />
         <Pixel/>
+        <Stats/>
       </Box>
     </>
   );
