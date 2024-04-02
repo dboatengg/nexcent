@@ -10,7 +10,7 @@ const AudienceSuitability = () => {
   
 
   return (
-    <SimpleGrid columns={{sm:1,md:2,lg:3}} gap='20px' justifyItems='center' marginBottom='40px'>
+    <SimpleGrid columns={{sm:1,md:2,lg:3}} gap='20px' justifyItems='center'>
       {audienceSuitabilityData.map(data=>(
       <Flex key={data.id} maxWidth='500px' justifyContent='center' alignItems='center' flexDirection='column' >
         <Image boxSize='80px' src={data.id === 1 ? membership : data.id === 2 ? national:data.id ===3?clubs:''}/>
