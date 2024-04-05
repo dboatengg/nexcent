@@ -44,10 +44,10 @@ const theme = extendTheme({
     Button: {
       baseStyle: {
         fontWeight: "normal",
-        borderRadius: "md",
-       },
-       variants: {
+      },
+      variants: {
         primary: {
+          borderRadius: "md",
           color: "white",
           bg: "primary",
           paddingX:'25px',
@@ -56,6 +56,9 @@ const theme = extendTheme({
             bg: "secondary",
           },
         },
+        secondary: {
+          color:'primary'
+        }
        }
       },
   },

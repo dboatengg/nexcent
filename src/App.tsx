@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Pixel from "./components/Pixel";
 import Stats from "./components/Stats";
 import FooterDesginGuide from "./components/FooterDesginGuide";
+import Customers from "./components/Customers";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Box p="20px" maxWidth="1200px" mx="auto">
           <FooterDesginGuide/>
       </Box>
+      <Customers/>
     </>
   );
 }
