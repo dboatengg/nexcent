@@ -10,7 +10,7 @@ import Client7 from '../assets/client-7.svg'
 const Client = () => {
   return (
     <Box textAlign='center' paddingY='50px'>
-      <Heading fontWeight='bold'>Our Clients</Heading>
+      <Heading size="heading2">Our Clients</Heading>
       <Text>We have been working with some Fortune 500+ clients</Text>
 
       <Flex wrap="wrap" justifyContent='center' marginTop={5}  columnGap={{base:'40px',md:'100px'}}>

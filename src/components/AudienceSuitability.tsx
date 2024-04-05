@@ -9,8 +9,8 @@ const AudienceSuitability = () => {
 
   return (
     <Flex alignItems='center' flexDirection='column'>
-      <Flex flexDirection='column' gap="10px" marginBottom='20px' width={{base:'100%',md:'500px'}}>
-        <Heading textAlign='center'>Manage your entire community in a single system</Heading>
+      <Flex flexDirection='column' gap="10px" marginBottom='20px' width={{base:'100%',md:'600px'}}>
+        <Heading size='heading2' textAlign='center'>Manage your entire community in a single system</Heading>
         <Text textAlign='center'>Who is Nextcent suitable for?</Text>
       </Flex>
       <Flex wrap='wrap' gap='25px' justifyContent='center'>

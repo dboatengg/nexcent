@@ -2,8 +2,44 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {
-    body: "Inter, sans-serif",
-    heading: "Inter, sans-serif",
+    body: "Poppins, sans-serif",
+    heading: "Montserrat, sans-serif",
+  },
+  colors: {
+    primary: "#28CB8B",
+    secondary: "#263238",
+    info: "#2194f3",
+    silver:"#F5F7FA",
+    greyblue:"#ABBED1",
+    white:"#ffffff",
+    grey:'#717171'
+  },
+  components: {
+    Text: {
+      baseStyle: {
+        color: "grey", 
+      },
+    },
+    Heading: {
+      sizes: {
+        heading1: {
+          fontSize: "64px", 
+          fontWeight: "semibold", 
+        },
+        heading2: {
+          fontSize: "36px", 
+          fontWeight: "semibold", 
+        },
+        heading3: {
+          fontSize: "28px", 
+          fontWeight: "bold", 
+        },
+        heading4: {
+          fontSize: "20px", 
+          fontWeight: "semibold", 
+        },
+      },
+    },
   },
   
 });
