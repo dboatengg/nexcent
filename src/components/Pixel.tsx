@@ -8,7 +8,7 @@ const Pixel = () => {
       <Flex flexDirection='column' alignItems={{base:'center', md:'start'}} gap='20px'>
         <Heading textAlign={{base:'center', md:'start'}}>The unseen of spending three years at Pixelgrade</Heading>
         <Text textAlign={{base:'center', md:'start'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</Text>
-        <Button bg='primary' color='white' paddingX='30px' paddingY='20px'>Learn More</Button>
+        <Button variant='primary'>Learn More</Button>
       </Flex>
     </SimpleGrid>
   )

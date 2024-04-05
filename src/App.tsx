@@ -16,8 +16,10 @@ function App() {
         <Client />
         <AudienceSuitability />
         <Pixel/>
-        <Stats/>
-        <FooterDesginGuide/>
+      </Box>
+      <Stats/>
+      <Box p="20px" maxWidth="1200px" mx="auto">
+          <FooterDesginGuide/>
       </Box>
     </>
   );

@@ -6,7 +6,7 @@ const theme = extendTheme({
     heading: "Montserrat, sans-serif",
   },
   colors: {
-    primary: "#28CB8B",
+    primary: "#4CAF4F",
     secondary: "#263238",
     info: "#2194f3",
     silver:"#F5F7FA",
@@ -32,7 +32,8 @@ const theme = extendTheme({
         },
         heading3: {
           fontSize: "28px", 
-          fontWeight: "bold", 
+          fontWeight: "semibold", 
+          lineHeight:'30px'
         },
         heading4: {
           fontSize: "20px", 
@@ -40,6 +41,23 @@ const theme = extendTheme({
         },
       },
     },
+    Button: {
+      baseStyle: {
+        fontWeight: "normal",
+        borderRadius: "md",
+       },
+       variants: {
+        primary: {
+          color: "white",
+          bg: "primary",
+          paddingX:'25px',
+          paddingY:'30px',
+          _hover: {
+            bg: "secondary",
+          },
+        },
+       }
+      },
   },
   
 });
