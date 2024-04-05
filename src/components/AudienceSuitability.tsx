@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react"
+import {  Flex, Heading, Image, Text } from "@chakra-ui/react"
 import audienceSuitabilityData from "../data/audienceSuitabilityData"
 
 import membership from '../assets/membership-organisations.svg'
@@ -7,10 +7,12 @@ import clubs from '../assets/clubs-and-groups.svg'
 
 const AudienceSuitability = () => {
 
-  
-
   return (
-    <Box>
+    <Flex alignItems='center' flexDirection='column'>
+      <Flex flexDirection='column' gap="10px" marginBottom='20px' width={{base:'100%',md:'500px'}}>
+        <Heading textAlign='center'>Manage your entire community in a single system</Heading>
+        <Text textAlign='center'>Who is Nextcent suitable for?</Text>
+      </Flex>
       <Flex wrap='wrap' gap='25px' justifyContent='center'>
         {audienceSuitabilityData.map(data=>(
         <Flex key={data.id} width='320px' justifyContent='center' alignItems='center' flexDirection='column' >
@@ -20,7 +22,7 @@ const AudienceSuitability = () => {
         </Flex>
         ))}
       </Flex>
-    </Box>
+    </Flex>
   )
 }
 

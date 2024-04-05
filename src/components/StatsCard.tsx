@@ -9,7 +9,7 @@ const StatsCard = () => {
   return (
     <SimpleGrid columns={2} rowGap='30px' justifyItems={{base:'center',md:'start'}}>
       {statsData.map(data=>(
-        <Flex alignItems='flex-start' gap="15px">
+        <Flex alignItems='flex-start' gap="15px" key={data.id}>
         <Image src={data.id === 1 ? members:data.id === 2 ?clubs: data.id === 3 ?bookings: data.id === 4?payment:''}/>
             <VStack alignItems='flex-start'>
                 <Heading fontSize='20px'>{data.heading}</Heading>

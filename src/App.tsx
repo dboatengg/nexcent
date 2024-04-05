@@ -5,12 +5,13 @@ import Client from "./components/Client";
 import Navbar from "./components/Navbar";
 import Pixel from "./components/Pixel";
 import Stats from "./components/Stats";
+// import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <Hero /> */}
+      {/* <Hero/> */}
       
       <Box p="20px" maxWidth="1200px" mx="auto">
         <Client />
