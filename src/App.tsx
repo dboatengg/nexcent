@@ -7,22 +7,24 @@ import Pixel from "./components/Pixel";
 import Stats from "./components/Stats";
 import FooterDesginGuide from "./components/FooterDesginGuide";
 import Customers from "./components/Customers";
+// import Cta from "./components/Cta";
 
 function App() {
   return (
     <>
       <Navbar />
       
-      <Box p="20px" maxWidth="1200px" mx="auto">
+      <Box paddingX="20px" maxWidth="1200px" mx="auto">
         <Client />
         <AudienceSuitability />
         <Pixel/>
       </Box>
       <Stats/>
       <Box p="20px" maxWidth="1200px" mx="auto">
-          <FooterDesginGuide/>
+        <FooterDesginGuide/>
       </Box>
       <Customers/>
+      {/* <Cta/> */}
     </>
   );
 }

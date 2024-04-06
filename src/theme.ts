@@ -50,8 +50,8 @@ const theme = extendTheme({
           borderRadius: "md",
           color: "white",
           bg: "primary",
-          paddingX:'25px',
-          paddingY:'30px',
+          paddingX:'23px',
+          paddingY:'26px',
           _hover: {
             bg: "secondary",
           },

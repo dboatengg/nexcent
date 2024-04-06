@@ -15,7 +15,7 @@ const AudienceSuitability = () => {
       </Flex>
       <Flex wrap='wrap' gap='30px' justifyContent='center'>
         {audienceSuitabilityData.map(data=>(
-        <Flex key={data.id} bg='white' boxShadow='md' borderRadius='sm' paddingX={5} paddingY={4} width='320px' justifyContent='center' alignItems='center' flexDirection='column' >
+        <Flex key={data.id} bg='white' boxShadow='md' borderRadius='sm' paddingX={5} paddingY={4} maxWidth={{base:'100%',md:'350px'}} justifyContent='center' alignItems='center' flexDirection='column' >
           <Image boxSize='80px' src={data.id === 1 ? membership : data.id === 2 ? national:data.id ===3?clubs:''}/>
           <Heading size='heading3' textAlign='center'>{data.heading}</Heading>
           <Text textAlign='center'>{data.text}</Text>
