@@ -1,22 +1,14 @@
-import { Flex, Box, Button, useDisclosure, Image, HStack, Heading } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Flex, Box, Button, useDisclosure, Text, Image, HStack, Heading, IconButton, VStack, Link } from "@chakra-ui/react";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import navbarData from '../data/navbarData';
 import logo from '../assets/logo.svg'
 import '@fontsource/inter/300.css'
 
 const Navbar = () => {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onOpen, onClose} = useDisclosure();
 
   return (
-    <Flex
-      as="nav"
-      align="center"
-      justify="space-between"
-      padding="10px"
-      color="white"
-      boxShadow='md'
-    
-    >
+    <Flex as="nav" align="center" justify="space-between" padding="10px" color="white" boxShadow="sm">
       <Box>
         <HStack>
         <Image src={logo} alt="Logo" boxSize={{base:'40px',md:'45px',lg:'50px'}} /> 
@@ -24,22 +16,28 @@ const Navbar = () => {
         </HStack>
       </Box>
 
-      <Box display={{ base: isOpen ? "block" : "none", md: "block" }} >
+      <Box display={{ base: "none", md: "block" }} >
         {navbarData.map((item, index) => (
           <Button key={index} variant="ghost" mr={2} as="a" href={item.path}>
             {item.label}
           </Button>
         ))}
-        <Button bg='green.300' color='white' variant='unstyled' pt={2} pb={2} pr={4} pl={4}>Register Now</Button>
+        <Button variant='primary'>Register Now</Button>
       </Box>
 
-        <Button
-          display={{ base: "block", md: "none" }}
-          onClick={onToggle}
-          leftIcon={<HamburgerIcon color='black' boxSize={7}/>}
-          variant='unstyled'
-        >
-        </Button>
+      {/* Mobile Menu  */}
+      {isOpen && (
+        <VStack boxShadow='md' spacing={4} width="full" bg="white" paddingY='20px' position="absolute" top={20} left={0} zIndex={2}>
+          {navbarData.map((item) => (
+            <Link onClick={onClose} key={item.label}  p={4}>
+              <Text fontSize="md">{item.label}</Text>
+            </Link>
+          ))}
+          <Button onClick={onClose} variant='primary'>Register Now</Button>
+        </VStack>
+      )}
+      
+        <IconButton icon={isOpen ? <CloseIcon /> : <HamburgerIcon boxSize={6} />} onClick={isOpen ? onClose : onOpen} display={{ base: "block", md: "none" }} variant="ghost" aria-label="Menu" />
     </Flex>
   );
 };
