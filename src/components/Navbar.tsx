@@ -3,6 +3,7 @@ import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import navbarData from '../data/navbarData';
 import logo from '../assets/logo.svg'
 import '@fontsource/inter/300.css'
+import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose} = useDisclosure();
@@ -22,7 +23,7 @@ const Navbar = () => {
             {item.label}
           </Button>
         ))}
-        <Button variant='primary'>Register Now</Button>
+        <Button rightIcon={<HiMiniArrowLongRight />} variant='primary'>Register Now</Button>
       </Box>
 
       {/* Mobile Menu  */}
@@ -33,7 +34,7 @@ const Navbar = () => {
               <Text fontSize="md">{item.label}</Text>
             </Link>
           ))}
-          <Button onClick={onClose} variant='primary'>Register Now</Button>
+          <Button rightIcon={<HiMiniArrowLongRight />} onClick={onClose} variant='primary'>Register Now</Button>
         </VStack>
       )}
       
