@@ -1,0 +1,38 @@
+.swiper {
+    width: 100%;
+    height: 90vh;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .image-wrapper {
+    width: 50%; /* Ensures the image takes the full width of its container */
+  }
+  
+  .hero-image {
+      width: 100%; /* Adjust this value as needed to control the size of the SVG */
+      height: auto; /* Ensures the aspect ratio is maintained */
+    }
+    
+    @media(max-width:62em){
+      .image-wrapper {
+        width: 70%; /* Ensures the image takes the full width of its container */
+      }
+  }

@@ -9,11 +9,13 @@ import FooterDesginGuide from "./components/FooterDesginGuide";
 import Customers from "./components/Customers";
 import Blog from "./components/Blog";
 import Cta from "./components/Cta";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Navbar />
+      <Hero/>
       <Box paddingX="20px" maxWidth="1200px" mx="auto">
         <Client />
         <AudienceSuitability />
