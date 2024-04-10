@@ -9,7 +9,7 @@ import Client7 from '../assets/client-7.svg'
 
 const Client = () => {
   return (
-    <Box textAlign='center' paddingY='50px'>
+    <Box textAlign='center' paddingY='60px'>
       <Heading size="heading2">Our Clients</Heading>
       <Text>We have been working with some Fortune 500+ clients</Text>
 
@@ -22,7 +22,6 @@ const Client = () => {
         <Image boxSize='60px' src={Client6}/>
         <Image boxSize='60px' src={Client7}/>
     </Flex>
-
     </Box>
   )
 }

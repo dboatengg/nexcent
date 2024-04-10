@@ -7,11 +7,11 @@ import { HiMiniArrowLongRight } from "react-icons/hi2"
 
 const Blog = () => {
   return (
-    <Box>
-        <Box maxWidth="60%" textAlign='center' mx="auto" marginBottom="20px">
+    <Box padding="40px">
+        <Flex flexDirection="column" gap="10px" maxWidth="60%" textAlign='center' mx="auto" marginBottom="20px">
             <Heading>Caring is the new marketing</Heading>
             <Text>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.</Text>
-        </Box>
+        </Flex>
         <Flex flexDirection={{base:'column',md:'row'}} justifyContent="space-between" gap="30px" alignItems="center">
             <Box>
                 <Image src={blog1}/>

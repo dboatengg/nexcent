@@ -8,9 +8,9 @@ import clubs from '../assets/clubs-and-groups.svg'
 const AudienceSuitability = () => {
 
   return (
-    <Flex alignItems='center' flexDirection='column' >
-      <Flex flexDirection='column' gap="10px" marginBottom='20px' width={{base:'100%',md:'600px'}}>
-        <Heading size='heading2' textAlign='center'>Manage your entire community in a single system</Heading>
+    <Flex alignItems='center' flexDirection='column' marginY="20px">
+      <Flex flexDirection='column' gap="10px" marginBottom='15x' width={{base:'100%',md:'600px'}}>
+        <Heading lineHeight="40px" size='heading2' textAlign='center'>Manage your entire community in a single system</Heading>
         <Text textAlign='center'>Who is Nextcent suitable for?</Text>
       </Flex>
       <Flex wrap='wrap' gap='30px' justifyContent='center'>

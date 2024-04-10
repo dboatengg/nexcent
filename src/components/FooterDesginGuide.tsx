@@ -3,7 +3,7 @@ import DesginGuideImage from '../assets/design-guide.png'
 
 const FooterDesginGuide = () => {
   return (
-    <SimpleGrid columns={{sm:1,md:2}} gap='20px' alignItems='center'  paddingY='10px'>
+    <SimpleGrid columns={{sm:1,md:2}} gap='20px' alignItems='center'  paddingY='25px'>
     <Image src={DesginGuideImage}/>
     <Flex flexDirection='column' alignItems={{base:'center', md:'start'}} gap='20px'>
       <Heading textAlign={{base:'center', md:'start'}}>The unseen of spending three years at Pixelgrade</Heading>
