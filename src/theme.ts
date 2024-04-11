@@ -21,6 +21,16 @@ const theme = extendTheme({
     grey:'#717171'
   },
   components: {
+    Link: {
+      variants: {
+        footerLink: {
+          bg:'#3C464C',
+          padding: '3',
+          borderRadius:'50px'
+        }
+      }
+
+    },
     Text: {
       variants: {
         footer: {

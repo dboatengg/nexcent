@@ -13,10 +13,10 @@ const Footer2 = () => {
           <Text variant="footer">All rights reserved</Text>
         </Box>
         <Flex alignItems="center" gap="10px">
-          <Link><FaInstagram/></Link>
-          <Link><FaDribbble/></Link>
-          <Link><FaTwitter/></Link>
-          <Link><FaYoutube/></Link>
+          <Link variant="footerLink"><FaInstagram size={20}/></Link>
+          <Link variant="footerLink"><FaDribbble size={20}/></Link>
+          <Link variant="footerLink"><FaTwitter size={20}/></Link>
+          <Link variant="footerLink"><FaYoutube size={20}/></Link>
         </Flex>
     </Flex>
   )
