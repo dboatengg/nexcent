@@ -1,4 +1,4 @@
-import { Flex, Box, Button, useDisclosure, Text, Image, HStack, Heading, IconButton, VStack, Link } from "@chakra-ui/react";
+import { Flex, Box, Button, useDisclosure, Text, Image, IconButton, VStack, Link } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import navbarData from '../data/navbarData';
 import logo from '../assets/logo.svg'
@@ -10,13 +10,7 @@ const Navbar = () => {
 
   return (
     <Flex as="nav" align="center" height="70px" justify="space-between" padding="10px" color="white" boxShadow="sm">
-      <Box>
-        <HStack>
-        <Image src={logo} alt="Logo" boxSize={{base:'40px',md:'45px',lg:'50px'}} /> 
-        <Heading color='black' fontSize={{base:'25px',md:'28px',lg:'30px'}}>Nexcent</Heading>
-        </HStack>
-      </Box>
-
+        <Image src={logo} alt="Logo" boxSize={{base:'150px',md:'150px',lg:'150px'}} /> 
       <Box display={{ base: "none", md: "block" }} >
         {navbarData.map((item, index) => (
           <Button key={index} variant="ghost" mr={2} as="a" href={item.path}>
