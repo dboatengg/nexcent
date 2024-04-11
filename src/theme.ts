@@ -22,6 +22,11 @@ const theme = extendTheme({
   },
   components: {
     Text: {
+      variants: {
+        footer: {
+          color: "#fff",
+        },
+      },
       baseStyle: {
         color: "grey", 
       },

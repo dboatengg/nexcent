@@ -10,6 +10,7 @@ import Customers from "./components/Customers";
 import Blog from "./components/Blog";
 import Cta from "./components/Cta";
 import Hero from "./components/Hero";
+import FooterMain from "./components/FooterMain";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Blog/>
       </Box>
       <Cta/>
+      <FooterMain/>
     </>
   );
 }
