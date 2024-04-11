@@ -9,7 +9,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose} = useDisclosure();
 
   return (
-    <Flex as="nav" align="center" height="12vh" justify="space-between" padding="10px" color="white" boxShadow="sm">
+    <Flex as="nav" align="center" height="70px" justify="space-between" padding="10px" color="white" boxShadow="sm">
       <Box>
         <HStack>
         <Image src={logo} alt="Logo" boxSize={{base:'40px',md:'45px',lg:'50px'}} /> 
