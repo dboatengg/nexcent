@@ -11,5 +11,6 @@ Nexcent is a landing page website built with React and Chakra UI.
 ## Technologies Used
 
 - React
+- Typescript
 - Chakra UI
 - Vite
